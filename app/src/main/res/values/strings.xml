@@ -7,4 +7,6 @@
     <string name="title_activity_thanks">Thanks</string>
     <string name="title_activity_log_interaction">LogInteraction</string>
     <string name="title_activity_results">Results</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_report_test">ReportTest</string>
 </resources>
