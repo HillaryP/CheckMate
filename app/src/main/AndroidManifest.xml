@@ -46,6 +46,11 @@
             android:name=".log_activity.Results"
             android:label="@string/title_activity_results" >
         </activity>
+
+        <activity
+            android:name=".VerifyPartner"
+            android:label="Verify" >
+        </activity>
     </application>
 
 </manifest>

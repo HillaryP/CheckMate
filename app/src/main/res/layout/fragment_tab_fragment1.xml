@@ -27,7 +27,7 @@
 
 <Button
     android:layout_width="match_parent"
-    android:id="@+id/SubmitNumber"
+    android:id="@+id/submitNumber"
     android:layout_marginTop="180dp"
     android:text="SUBMIT"
     android:textStyle="bold"
