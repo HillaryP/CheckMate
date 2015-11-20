@@ -23,6 +23,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:design:22.2.0'
     compile files('libs/twilioclient-android.jar')
     compile files('libs/twilio-java-sdk-3.3.10-jar-with-dependencies.jar')
 }
