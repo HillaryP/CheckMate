@@ -23,7 +23,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:21.0.3'
-    compile files('libs/twilio-java-sdk-5.0.0-jar-with-dependencies.jar')
+    compile 'com.android.support:design:22.2.0'
     compile files('libs/Parse-1.9.1.jar')
     compile 'com.parse.bolts:bolts-android:1.+'
 }
