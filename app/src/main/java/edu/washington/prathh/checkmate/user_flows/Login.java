@@ -19,6 +19,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
+import edu.washington.prathh.checkmate.FontsOverride;
 import edu.washington.prathh.checkmate.MainActivity;
 import edu.washington.prathh.checkmate.R;
 
@@ -27,6 +28,7 @@ public class Login extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FontsOverride.setDefaultFont(this, "MONOSPACE", "fonts/Avenir.ttc");
         setContentView(R.layout.activity_login);
         Button login = (Button) findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
