@@ -21,10 +21,10 @@ import java.util.Set;
  */
 public class NetworkAlerter {
     private Set<String> seen;
-    private Set<String> phoneNumbers;
+    private Set<ParseUser> parseUsers;
     public NetworkAlerter() {
         this.seen = new HashSet<>();
-        this.phoneNumbers = new HashSet<>();
+        this.parseUsers = new HashSet<>();
     }
 
     public void alert() {
@@ -88,7 +88,7 @@ public class NetworkAlerter {
 
                 String phoneNo = user.getString("phoneNo");
                 Log.i("Alerter", phoneNo);
-                this.phoneNumbers.add(phoneNo);
+                this.parseUsers.add(user);
                 crawlOnUser(user);
             }
         }
@@ -113,7 +113,7 @@ public class NetworkAlerter {
         }
     }
 
-    public Set<String> getPhoneNumbers() {
-        return this.phoneNumbers;
+    public Set<ParseUser> getPhoneNumbers() {
+        return this.parseUsers;
     }
 }

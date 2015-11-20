@@ -3,6 +3,7 @@ package edu.washington.prathh.checkmate;
 import android.app.Application;
 import com.parse.Parse;
 import com.parse.ParseInstallation;
+import com.parse.ParsePush;
 import com.parse.ParseUser;
 
 /**

@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.parse.LogInCallback;
 import com.parse.ParseException;
+import com.parse.ParseInstallation;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
@@ -57,6 +58,9 @@ public class Login extends ActionBarActivity {
                             });
                     alertDialog.show();
                 } else {
+                    ParseInstallation installation = ParseInstallation.getCurrentInstallation();
+                    installation.put("user", ParseUser.getCurrentUser());
+                    installation.saveInBackground();
                     Intent intent = new Intent(Login.this, Thanks.class);
                     startActivity(intent);
                 }

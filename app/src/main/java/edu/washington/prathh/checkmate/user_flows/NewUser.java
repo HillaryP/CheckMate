@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.parse.ParseException;
+import com.parse.ParseInstallation;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
@@ -70,6 +71,9 @@ public class NewUser extends ActionBarActivity {
                             });
                     alertDialog.show();
                 } else {
+                    ParseInstallation installation = ParseInstallation.getCurrentInstallation();
+                    installation.put("user", ParseUser.getCurrentUser());
+                    installation.saveInBackground();
                     Intent intent = new Intent(NewUser.this, MainActivity.class);
                     startActivity(intent);
                 }
