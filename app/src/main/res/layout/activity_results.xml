@@ -5,10 +5,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="edu.washington.prathh.checkmate.report_test.Thanks">
+    tools:context="edu.washington.prathh.checkmate.log_activity.Results">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:text="THANKS YO"/>
 </RelativeLayout>

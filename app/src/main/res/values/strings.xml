@@ -5,4 +5,6 @@
     <string name="title_activity_login">Login</string>
     <string name="title_activity_landing">Landing</string>
     <string name="title_activity_thanks">Thanks</string>
+    <string name="title_activity_log_interaction">LogInteraction</string>
+    <string name="title_activity_results">Results</string>
 </resources>

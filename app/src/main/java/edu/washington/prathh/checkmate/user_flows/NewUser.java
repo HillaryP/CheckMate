@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.parse.ParseException;
+import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
@@ -51,7 +52,7 @@ public class NewUser extends ActionBarActivity {
         user.setPassword(password);
         user.put("phoneNo", phoneNo);
         user.put("hasSTI", hasSTI);
-        //user.put("connections", new ArrayList<ParseObject>());
+        user.put("connections", new ArrayList<ParseObject>());
 
         user.signUpInBackground(new SignUpCallback() {
             @Override

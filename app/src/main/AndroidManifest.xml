@@ -42,6 +42,10 @@
             android:name=".report_test.Thanks"
             android:label="@string/title_activity_thanks" >
         </activity>
+        <activity
+            android:name=".log_activity.Results"
+            android:label="@string/title_activity_results" >
+        </activity>
     </application>
 
 </manifest>
