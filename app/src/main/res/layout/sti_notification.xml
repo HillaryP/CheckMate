@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:text="Looks like somebody in your network reported contracting an STI. We highly recommend you visit a clinic to get tested for the following tests:"
+        android:textSize="16dp"
+        android:lineSpacingExtra="12dp"
+        android:paddingTop="42dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#2D2D2D"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- HIV\n- Chlamydia\n- Syphillis"
+        android:lineSpacingExtra="12dp"
+        android:paddingTop="40dp"
+        android:paddingLeft="50dp"
+        android:textSize="16dp"
+        android:textColor="#4A90E2"/>
+
+    <ImageView
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/nearestclinics"/>
+
+</LinearLayout>
