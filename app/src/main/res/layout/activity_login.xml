@@ -78,18 +78,22 @@
         android:textColor="#B3ffffff"
         android:textStyle="bold"
         android:text="PASSWORD"/>
+
+
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         android:layout_marginLeft="48dp"
+        android:inputType="textPassword"
         android:textColor="#000000"
         android:textStyle="bold"
         android:background="@drawable/input_line"
         android:layout_marginTop="4dp"
         android:layout_marginRight="48dp"
         android:id="@+id/login_password"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_marginLeft="48dp"
@@ -103,13 +107,15 @@
         android:textSize="16dp"
         android:text="Login"/>
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="16dp"
         android:paddingTop="40dp"
+        android:id="@+id/landing_signup"
         android:textColor="#ffffff"
+        android:background="#00ffffff"
         android:text="SIGN UP"/>
 
 </LinearLayout>
