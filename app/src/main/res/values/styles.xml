@@ -9,6 +9,7 @@
         <item name="android:colorPrimaryDark">#478AD9</item>
         <!--   theme UI controls like checkboxes and text fields -->
         <item name="android:colorAccent">#ffffff</item>
+        <item name="android:typeface">monospace</item>
     </style>
 
 </resources>
