@@ -37,8 +37,6 @@ public class Login extends ActionBarActivity {
                 login();
             }
         });
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
     }
 
     public void login() {
