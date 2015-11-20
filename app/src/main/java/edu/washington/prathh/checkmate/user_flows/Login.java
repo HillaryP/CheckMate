@@ -22,6 +22,7 @@ import com.parse.SignUpCallback;
 import edu.washington.prathh.checkmate.FontsOverride;
 import edu.washington.prathh.checkmate.MainActivity;
 import edu.washington.prathh.checkmate.R;
+import edu.washington.prathh.checkmate.report_test.Thanks;
 
 public class Login extends ActionBarActivity {
 
@@ -56,7 +57,7 @@ public class Login extends ActionBarActivity {
                             });
                     alertDialog.show();
                 } else {
-                    Intent intent = new Intent(Login.this, MainActivity.class);
+                    Intent intent = new Intent(Login.this, Thanks.class);
                     startActivity(intent);
                 }
             }

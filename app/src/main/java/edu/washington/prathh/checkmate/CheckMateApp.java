@@ -2,6 +2,7 @@ package edu.washington.prathh.checkmate;
 
 import android.app.Application;
 import com.parse.Parse;
+import com.parse.ParseInstallation;
 import com.parse.ParseUser;
 
 /**
@@ -14,6 +15,7 @@ public class CheckMateApp extends Application {
 
         Parse.enableLocalDatastore(this);
         Parse.initialize(this, "vMk45PBuOmB4H3J2vNHNqlgBQlgHJLuNJ35mHBYs", "yinOMwQjv6RYjr9rcVYhZBNpsnH01wE6bOSPOvxs");
+        ParseInstallation.getCurrentInstallation().saveInBackground();
 
         if (ParseUser.getCurrentUser() != null) {
             ParseUser.logOut();
