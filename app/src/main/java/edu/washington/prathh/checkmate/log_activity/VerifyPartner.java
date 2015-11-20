@@ -27,7 +27,7 @@ public class VerifyPartner extends Activity{
         verifyButton = (Button) findViewById(R.id.verifyButton);
         verifyButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent myIntent = new Intent(VerifyPartner.this, ReportTest.class);
+                Intent myIntent = new Intent(VerifyPartner.this, Results.class);
                 startActivity(myIntent);
             }
         });

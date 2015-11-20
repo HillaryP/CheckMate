@@ -8,8 +8,22 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Report"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="Report a Test"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textStyle="bold"
+        android:background="#E8C547"
+        android:textColor="#ffffff"
+        android:text="REPORT"
+        android:id="@+id/report_test"/>
 
 </RelativeLayout>

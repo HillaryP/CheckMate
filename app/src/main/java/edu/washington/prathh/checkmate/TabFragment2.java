@@ -1,11 +1,15 @@
 package edu.washington.prathh.checkmate;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import edu.washington.prathh.checkmate.log_activity.VerifyPartner;
 
 
 /**
@@ -13,7 +17,7 @@ import android.view.ViewGroup;
  */
 public class TabFragment2 extends Fragment {
 
-
+    Button myButton;
     public TabFragment2() {
         // Required empty public constructor
     }
@@ -23,7 +27,16 @@ public class TabFragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab_fragment2, container, false);
+        View myView = inflater.inflate(R.layout.fragment_tab_fragment2, container, false);
+        myButton = (Button) myView.findViewById(R.id.report_test);
+        myButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                Intent myIntent = new Intent(getActivity(), ReportTest.class);
+                startActivity(myIntent);
+            }
+        });
+        return myView;
     }
 
 
