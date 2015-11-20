@@ -1,5 +1,8 @@
 package edu.washington.prathh.checkmate.user_flows;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -15,6 +18,7 @@ import com.parse.SignUpCallback;
 
 import java.util.ArrayList;
 
+import edu.washington.prathh.checkmate.MainActivity;
 import edu.washington.prathh.checkmate.R;
 
 public class NewUser extends ActionBarActivity {
@@ -53,9 +57,20 @@ public class NewUser extends ActionBarActivity {
             @Override
             public void done(ParseException e) {
                 if (e != null) {
-                    Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
+                    AlertDialog alertDialog = new AlertDialog.Builder(NewUser.this).create();
+                    alertDialog.setTitle("Sign Up Error");
+                    alertDialog.setMessage(e.getMessage());
+                    alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            });
+                    alertDialog.show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "User Created", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(NewUser.this, MainActivity.class);
+                    startActivity(intent);
                 }
             }
         });

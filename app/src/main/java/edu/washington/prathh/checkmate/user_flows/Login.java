@@ -1,5 +1,8 @@
 package edu.washington.prathh.checkmate.user_flows;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -15,6 +18,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
+import edu.washington.prathh.checkmate.MainActivity;
 import edu.washington.prathh.checkmate.R;
 
 public class Login extends ActionBarActivity {
@@ -33,14 +37,24 @@ public class Login extends ActionBarActivity {
     }
 
     public void login() {
-
         ParseUser.logInInBackground(((EditText)findViewById(R.id.login_username)).getText().toString(), ((EditText)findViewById(R.id.login_password)).getText().toString(), new LogInCallback() {
             @Override
             public void done(ParseUser parseUser, ParseException e) {
                 if (e != null) {
-                    Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
+                    AlertDialog alertDialog = new AlertDialog.Builder(Login.this).create();
+                    alertDialog.setTitle("Login Error");
+                    alertDialog.setMessage("Your username or password is incorrect. Please try again.");
+                    alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            });
+                    alertDialog.show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "User Logged in", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(Login.this, MainActivity.class);
+                    startActivity(intent);
                 }
             }
         });
