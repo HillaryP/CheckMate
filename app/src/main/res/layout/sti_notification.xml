@@ -24,11 +24,13 @@
         android:textSize="16dp"
         android:textColor="#4A90E2"/>
 
-    <ImageView
+    <Button
         android:layout_width="281dp"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="50dp"
+        android:background="#E8C547"
+        android:textColor="#ffffff"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/nearestclinics"/>
+        android:text="view nearest clinics"/>
 
 </LinearLayout>
