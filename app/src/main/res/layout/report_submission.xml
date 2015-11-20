@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="66dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/success" />
+
+    <TextView
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:text="Thank you for reporting your results! Your contribution will benefit the community greatly."
+        android:textSize="20dp"
+        android:textColor="#2D2D2D"
+        android:lineSpacingExtra="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_paddingTop="66dp" />
+
+    <ImageView
+        android:layout_width="281dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/done" />
+</LinearLayout>
