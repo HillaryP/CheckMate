@@ -9,4 +9,6 @@
     <string name="title_activity_results">Results</string>
     <string name="google_maps_key">AIzaSyC4xzmJyzBL30QNUmHI2MSM090szIxWmI0</string>
     <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_report_test">ReportTest</string>
 </resources>

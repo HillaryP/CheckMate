@@ -39,18 +39,30 @@
             android:name=".user_flows.NewUser"
             android:label="@string/title_activity_new_user" >
         </activity>
+
+        <activity
+            android:name=".Signup"
+            android:label="Signup" >
+        </activity>
+
+        <activity
+            android:name=".ReportTest"
+            android:label="Report" >
+        </activity>
+
         <activity
             android:name=".user_flows.Login"
             android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
         <activity
             android:name=".Landing"
             android:label="@string/title_activity_landing" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".report_test.Thanks"

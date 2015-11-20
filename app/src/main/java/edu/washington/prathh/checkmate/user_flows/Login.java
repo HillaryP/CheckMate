@@ -20,9 +20,11 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
+import edu.washington.prathh.checkmate.CheckMateApp;
 import edu.washington.prathh.checkmate.FontsOverride;
 import edu.washington.prathh.checkmate.MainActivity;
 import edu.washington.prathh.checkmate.R;
+import edu.washington.prathh.checkmate.Signup;
 import edu.washington.prathh.checkmate.report_test.Thanks;
 
 public class Login extends ActionBarActivity {
@@ -37,6 +39,14 @@ public class Login extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 login();
+            }
+        });
+        Button signup = (Button) findViewById(R.id.landing_signup);
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(Login.this, Signup.class);
+                startActivity(myIntent);
             }
         });
     }
