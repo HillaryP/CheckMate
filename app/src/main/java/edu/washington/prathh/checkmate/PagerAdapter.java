@@ -4,6 +4,7 @@ package edu.washington.prathh.checkmate;
  * Created by lilymdwyer on 11/19/15.
  */
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
@@ -20,7 +21,7 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                TabFragment1 tab1 = new TabFragment1();
+                Fragment tab1 = new TabFragment1();
                 return tab1;
             case 1:
                 TabFragment2 tab2 = new TabFragment2();

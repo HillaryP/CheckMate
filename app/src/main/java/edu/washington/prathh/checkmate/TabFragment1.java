@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import edu.washington.prathh.checkmate.log_activity.VerifyPartner;
+
 public class TabFragment1 extends Fragment {
     Button myButton;
 

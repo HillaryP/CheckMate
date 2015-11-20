@@ -31,7 +31,6 @@ public class Thanks extends ActionBarActivity {
             public void run() {
                 Set<ParseUser> nums = alerter.getPhoneNumbers();
                 for (ParseUser num : nums) {
-                    PendingIntent pi = PendingIntent.getBroadcast(Thanks.this, 0, new Intent("DoNothing"), 0);
                     try {
                         Log.i("SMS", "sending to " + num);
                         ParseQuery pushQuery = ParseInstallation.getQuery();

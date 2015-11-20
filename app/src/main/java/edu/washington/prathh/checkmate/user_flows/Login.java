@@ -61,7 +61,7 @@ public class Login extends ActionBarActivity {
                     ParseInstallation installation = ParseInstallation.getCurrentInstallation();
                     installation.put("user", ParseUser.getCurrentUser());
                     installation.saveInBackground();
-                    Intent intent = new Intent(Login.this, Thanks.class);
+                    Intent intent = new Intent(Login.this, MainActivity.class);
                     startActivity(intent);
                 }
             }

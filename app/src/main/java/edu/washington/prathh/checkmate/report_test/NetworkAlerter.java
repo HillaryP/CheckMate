@@ -86,8 +86,7 @@ public class NetworkAlerter {
             if (!seen.contains(user.getObjectId())) {
                 seen.add(user.getObjectId());
 
-                String phoneNo = user.getString("phoneNo");
-                Log.i("Alerter", phoneNo);
+                Log.i("Alerter", "user: " + user);
                 this.parseUsers.add(user);
                 crawlOnUser(user);
             }
