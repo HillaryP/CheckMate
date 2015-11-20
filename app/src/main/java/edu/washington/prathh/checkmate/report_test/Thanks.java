@@ -7,6 +7,8 @@ import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.telephony.SmsManager;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.parse.ParseInstallation;
 import com.parse.ParsePush;
@@ -51,6 +53,15 @@ public class Thanks extends ActionBarActivity {
                 }
             }
         }, 10000);
+
+        ImageView goBack = (ImageView) findViewById(R.id.goBack);
+        goBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent back = new Intent(Thanks.this, MainActivity.class);
+                startActivity(back);
+            }
+        });
 
     }
 
