@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import edu.washington.prathh.checkmate.R;
+import edu.washington.prathh.checkmate.ReportTest;
+
 /**
  * Created by lilymdwyer on 11/20/15.
  */
