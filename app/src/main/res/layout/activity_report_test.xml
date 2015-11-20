@@ -113,7 +113,8 @@ android:orientation="vertical">
         android:textColor="#ffffff"
         android:textStyle="bold"
         android:text="Next"
-        android:layout_marginLeft="260dp"/>
+        android:layout_marginLeft="260dp"
+        android:id="@+id/test_submission"/>
 </LinearLayout>
 
 
