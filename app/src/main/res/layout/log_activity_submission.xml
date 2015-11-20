@@ -18,7 +18,7 @@
         android:textColor="#2D2D2D"
         android:lineSpacingExtra="12dp"
         android:layout_gravity="center_horizontal"
-        android:layout_paddingTop="66dp" />
+        android:paddingTop="66dp" />
 
     <ImageView
         android:layout_width="281dp"

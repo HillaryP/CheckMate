@@ -16,8 +16,6 @@ public class Landing extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         Button login = (Button)findViewById(R.id.go_to_login);
         login.setOnClickListener(new View.OnClickListener() {

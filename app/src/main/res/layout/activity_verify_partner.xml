@@ -1,12 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <TextView
         android:layout_width="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="60dp"
         android:layout_height="wrap_content"
-        android:text="HelloWorld"/>
+        android:textAlignment="center"
+        android:text="Verify by correctly choosing your partner’s name"/>
 
-</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="24dp"
+        android:paddingTop="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Darren Smith"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+
+            android:textSize="20dp"
+            android:id="@+id/radioButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kerry Turner"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/radioButton2" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joey Russ"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+
+            android:id="@+id/radioButton3" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tim Toon"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+
+            android:id="@+id/radioButton4" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ryan Edge"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/radioButton5" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luke Stin"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/radioButton6" />
+    </LinearLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="VERIFY"
+        android:background="#E8C547"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:gravity="center"/>
+</RelativeLayout>
